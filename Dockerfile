@@ -1,5 +1,5 @@
 FROM tomcat:9.0.20-jre8
 
-MAINTAINER "sandeep"
+MAINTAINER "srikanth"
 
-COPY target/onlinebookstore-0.0.1-SNAPSHOT*.war /usr/local/tomcat/webapps/onlinebookstore-0.0.1-SNAPSHOT.war
+COPY target/onlinebookstore*.war /usr/local/tomcat/webapps/onlinebookstore.war
