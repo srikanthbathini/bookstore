@@ -19,15 +19,19 @@ spec:
         ports:
         - containerPort: 8080
 ---
-kind: Service
 apiVersion: v1
+kind: Service
 metadata:
+  labels:
+    app: bookstore
+    k8s-app: bookstore
   name: bookstore
 spec:
-  type: NodePort
+  ports:
+  - name: http
+    port: 80
+    protocol: TCP
+    targetPort: 8080
+  type: LoadBalancer
   selector:
     app: bookstore
-  ports:
-  - protocol: TCP
-    port: 8080
-    nodePort: 31257
