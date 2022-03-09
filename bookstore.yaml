@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: bookstore
-        image: public.ecr.aws/n4e0r7f3/onlinebook:$BUILD_ID
+        image: public.ecr.aws/n4e0r7f3/onlinebook:BUILD_ID
         ports:
         - containerPort: 8080
 ---
