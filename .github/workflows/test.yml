@@ -15,5 +15,5 @@ jobs:
         username: ubuntu
         key: ${{ secrets.TEST_UBUNTU }}
         port: 22
-        script: |
-        mkdir srikanth1234
+        script: mkdir srikanth1234
+
