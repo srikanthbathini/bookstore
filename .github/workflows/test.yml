@@ -14,9 +14,8 @@ jobs:
         host: 13.235.115.64
         username: ubuntu
         key: ${{ secrets.TEST_UBUNTU }}
-        port: 22
-  test:  
-    steps:
+        port: 22 
+    - name: testing
     - uses: actions/checkout@v2
     - name: Set up JDK 1.8
       uses: actions/setup-java@v1
