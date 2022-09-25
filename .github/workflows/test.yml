@@ -23,6 +23,8 @@ jobs:
      - uses: shivammathur/setup-php@v2
        with:
          php_version: "8.1"
+     - name: php version
+       run: php --version
          
      
      
