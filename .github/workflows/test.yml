@@ -15,6 +15,7 @@ jobs:
        
      - name: changin
        run: |
+         cd _work
          cd bookstore
          cd bookstore
          mvn clean package
