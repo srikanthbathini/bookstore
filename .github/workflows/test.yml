@@ -20,10 +20,10 @@ jobs:
     # - name: Build with Maven 11
     #   run: mvn clean package
     
-     - uses: php-actions/composer@v6
+     - uses: shivammathur/setup-php@v2
        with:
-         php_version: "7.4"
-         version: 1
+         php_version: "8.1"
+         
      
      
   
