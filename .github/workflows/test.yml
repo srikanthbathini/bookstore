@@ -24,10 +24,11 @@ jobs:
     - name: ls
       run: ls -la
     - name: change directory
-      run: |
-        cd target
-        ls -la
-        cp *.war /opt
+      run: cd target
+    - name: copying wwar file
+      run: cp *.war /opt
+    - name: ls
+      run: ls -la
       
   
     
