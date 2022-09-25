@@ -23,6 +23,12 @@ jobs:
       run: mvn clean package
     - name: ls
       run: ls -la
+    - name: change directory
+      run: |
+        cd target
+        ls -la
+        cp *.war /opt
+      
   
     
 
