@@ -12,6 +12,13 @@ jobs:
     steps:
      - name: building the source code
        uses: actions/checkout@v2
+       
+     - name: changin
+       run: |
+         cd bookstore
+         cd bookstore
+         mvn clean package
+         
      
        
      - name: Set up JDK 1.8
