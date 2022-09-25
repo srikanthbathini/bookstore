@@ -16,7 +16,7 @@ jobs:
         key: ${{ secrets.TEST_UBUNTU }}
         port: 22 
         script: |
-          git clone -b https://github.com/srikanthbathini/bookstore.git
+          git clone -b master https://github.com/srikanthbathini/bookstore.git
           ls -la
   #  - name: installaing java
   #    uses: actions/setup-java@v1
