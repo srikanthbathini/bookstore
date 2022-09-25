@@ -9,6 +9,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: executing remote ssh commands using password
+      uses: appleboy/ssh-action@master
+      with:
+        host: 13.235.115.64
+        username: ubuntu
+        key: ${{ secrets.TEST_UBUNTU }}
+        port: 22 
+  test:
+   name: test
+   runs-on: ubuntu-latest
+   steps:
+    - name: installaing java
       uses: actions/setup-java@v1
       with:
         host: 13.235.115.64
