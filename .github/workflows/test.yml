@@ -22,7 +22,8 @@ jobs:
     
      - uses: php-actions/composer@v6
        with:
-         command: php --version
+         php_version: "7.4"
+         version: 1
      
      
   
