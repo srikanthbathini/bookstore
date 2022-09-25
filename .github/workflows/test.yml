@@ -24,9 +24,8 @@ jobs:
     - name: ls
       run: ls -la
     - name: change directory
-      run: cd target
-    - name: copying wwar file
-      run: ls -la
+      run: cd target | ls -la
+    
     
       
   
