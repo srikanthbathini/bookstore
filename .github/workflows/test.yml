@@ -20,7 +20,7 @@ jobs:
     # - name: Build with Maven 11
     #   run: mvn clean package
     
-     - uses: nanasess/setup-php@v3
+     - uses: shivammathur/setup-php@v2
        with:
          php_version: 7.4
      - name: php version
