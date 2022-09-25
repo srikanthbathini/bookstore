@@ -8,7 +8,7 @@ pipeline {
        
     }
     stages {
-        stage('checkout') {
+        stage('checkout code') {
             steps {
                 checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/srikanthbathini/bookstore.git']]])
             }
