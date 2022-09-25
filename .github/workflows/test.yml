@@ -10,22 +10,15 @@ jobs:
       - self-hosted
       - dev-env
     steps:
-     - name: building the source code
-       uses: actions/checkout@v2
-       
-     - name: changin
-       run: |
-         cd _work
-         cd bookstore
-         cd bookstore
-         mvn clean package
-         
-     
-       
+
      - name: Set up JDK 1.8
        uses: actions/setup-java@v1
        with:
          java-version: 1.8
+     - name: verifying maven
+       run: mvn --version
+     - name: building the source code
+       uses: actions/checkout@v2 
      - name: Build with Maven 1
        run: mvn clean package
      
