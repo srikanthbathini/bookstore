@@ -22,7 +22,7 @@ jobs:
     - name: Build with Maven
       uses: actions/checkout@v2
       with:
-       run: mvn clean package
+       run: mvn -B package
     - name: ls
       run: ls -la
   
