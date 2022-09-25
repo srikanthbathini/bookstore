@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: executing remote ssh commands using password
-      uses: appleboy/ssh-action@master
+      uses: actions/checkout@v2
       with:
         host: 13.235.115.64
         username: ubuntu
@@ -19,10 +19,8 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 1.8
-    - name: Build with Maven
-      uses: actions/checkout@v2
-      with:
-       run: mvn -B package
+    - name: maven build
+      run: mvn clean package
     - name: ls
       run: ls -la
   
