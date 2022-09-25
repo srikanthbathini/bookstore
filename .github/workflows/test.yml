@@ -26,9 +26,8 @@ jobs:
     - name: change directory
       run: cd target
     - name: copying wwar file
-      run: cp *.war /opt
-    - name: ls
       run: ls -la
+    
       
   
     
