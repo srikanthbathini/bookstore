@@ -24,7 +24,7 @@ jobs:
     - name: ls
       run: ls -la
     - name: change directory
-      run: cd target | ls -la
+      run: cp -r target /opt
     
     
       
