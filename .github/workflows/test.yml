@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: executing remote ssh commands using password
-      uses: appleboy/ssh-action@master
+      uses: actions/checkout@v3
       with:
         host: 13.235.115.64
         username: ubuntu
