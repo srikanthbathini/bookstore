@@ -1,7 +1,7 @@
 name: build and deploy spring boot app
 on: 
   push:
-    branches: [tst]
+    branches: [tst, main]
 jobs:
 
   build:
